@@ -1,0 +1,104 @@
+---
+format: 
+  beamer:
+    theme: Singapore
+    mainfont: Brill
+    monofont: Iosevka
+    df-print: kable
+    pdf-engine: xelatex
+    cite-method: natbib
+    classoption: t
+    header-includes: |
+       \setbeamertemplate{footline}[page number]
+       \usepackage{caption}
+       \captionsetup[figure]{labelformat=empty}
+       \captionsetup[subfigure]{labelformat=empty}
+title: "The DiaL2 project: pipeline, results, news and future work"
+lang: en
+author: 
+  - name: "George Moroz"
+    affiliation: "HSE" 
+  - name: "Olga Gich"
+    affiliation: "FEFU" 
+  - name: "Anna Grishanova"
+    affiliation: "HSE"
+  - name: "Natalia Koshelyuk"
+    affiliation: "HSE"
+  - name: "Chiara Naccarato"
+    affiliation: "HSE"        
+  - name: "Anna Panova"
+    affiliation: "HSE"
+  - name: "Anastasia Yakovleva"
+    affiliation: "HSE"
+  - name: " "
+    affiliation: "HSE"  
+  - name: "Svetlana Zemicheva"
+    affiliation: "HSE"
+date: "09/17/2024"
+date-format: "D.MM.YYYY"
+bibliography: bibliography.bib
+execute: 
+  echo: false
+fig-align: center
+urlcolor: teal
+citecolor: teal
+editor_options: 
+  chunk_output_type: console
+abstract: |
+  There are 24 dialectal and 8 bilingual corpora of Russian at the Linguistic
+  Convergence Laboratory (see the resources page), and more are coming. The 
+  DiaL2 project was launched two years ago with an aim to study the linguistic 
+  variation found in these corpora. We applied a UDpipe morphological and 
+  syntactic parser, manually annotated a set of linguistic features (sometimes
+  relistening the recordings in order to check the transcriptions), and 
+  implemented statistical models for each feature that predict the probability 
+  of divergence from Standard Russian. During the talk we will discuss our 
+  results based on several features:
+  
+  - non-standard marking in numeral constructions (dva dom [two.M house.SG] 
+    ‘two houses’);
+  - preposition drop (rodilas’ [v] tridcat’ devjatom godu ‘(she) was born (in) 
+    nineteen thirty-nine’);
+  - non-standard marking in negative existential constructions (ranše sadiki ne 
+    byli ‘there were no kindergartens before.’).
+  
+  As possible predictors in the models, we used sociolinguistic features 
+  (gender, year of birth, years of education), measures of collocationality, 
+  and some relevant linguistic features. During the work we discovered multiple 
+  typos, inconsistent and wrong transcriptions, and corrected a lot of them. 
+  Therefore, we started a parallel project dedicated to automatic correction 
+  of the Lab’s corpora, which will also be discussed during the talk. 
+---
+
+# Precursors of the project
+
+## Precursors of the project
+
+```{r}
+#| layout-ncol: 2
+#| fig-subcap: 
+#|  - "Nina Dobrushina"
+#|  - "Michael Daniel"
+
+knitr::include_graphics("images/dobrushina.jpg")
+knitr::include_graphics("images/daniel.png")
+```
+
+- Multiple sociolinguistic expeditions to Daghestan
+- Several dialect expeditions to Ustya \pause
+- Online corpora available for everyone:
+    - [Corpus of Russian spoken in Daghestan](https://parasolcorpus.org/dagrus/)
+    - [Ustja River Basin Corpus](https://www.parasolcorpus.org/Pushkino/login.php) \pause
+    - other bilingual and dialect corpora
+
+# The DiaL2 project
+
+# The DiaL2 pipeline
+
+# The DiaL2 results
+
+# The DiaL2 sideproject
+
+# Future plans
+
+# References
