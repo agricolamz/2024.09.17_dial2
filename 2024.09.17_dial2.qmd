@@ -13,6 +13,7 @@ format:
        \usepackage{caption}
        \captionsetup[figure]{labelformat=empty}
        \captionsetup[subfigure]{labelformat=empty}
+       \setbeamercolor{alerted text}{fg=teal}
 title: "The DiaL2 project: pipeline, results, news and future work"
 lang: en
 author: 
@@ -39,7 +40,8 @@ date-format: "D.MM.YYYY"
 bibliography: bibliography.bib
 execute: 
   echo: false
-fig-align: center
+  warning: false
+fig-align: center  
 urlcolor: teal
 citecolor: teal
 editor_options: 
@@ -70,6 +72,14 @@ abstract: |
   of the Lab’s corpora, which will also be discussed during the talk. 
 ---
 
+```{r}
+#| include: false
+
+library(treemapify)
+library(tidyverse)
+theme_set(theme_minimal()+theme(text = element_text(size = 16)))
+```
+
 # Precursors of the project
 
 ## Precursors of the project
@@ -89,9 +99,126 @@ knitr::include_graphics("images/daniel.png")
 - Online corpora available for everyone:
     - [Corpus of Russian spoken in Daghestan](https://parasolcorpus.org/dagrus/)
     - [Ustja River Basin Corpus](https://www.parasolcorpus.org/Pushkino/login.php) \pause
-    - other bilingual and dialect corpora
+    - ... and other bilingual and dialect corpora
+
+## Resources of the Linguistic Convergence Laboratory
+
+```{r}
+read_tsv("https://raw.githubusercontent.com/LingConLab/LABsite_qmd/main/data.tsv") |> 
+  filter(name != "Yakut-Russian Code-Switching Corpus") ->
+  resources_data
+  
+resources_data |>
+  distinct(name, type, subtype) |> 
+  filter(type == "corpus") |> 
+  count(subtype) ->
+  stats
+
+bilingual <- stats |> filter(subtype == "bilingual") |> pull(n)
+dialect <- stats |> filter(subtype == "dialectal") |> pull(n)
+```
+
+- <https://lingconlab.ru/>
+- `r dialect` dialectal corpora
+- `r bilingual` bilingual corpora
+
+## Dialectal Corpora
+
+```{r}
+resources_data |> 
+  filter(subtype == "dialectal") |> 
+  distinct(name, n_tokens) |> 
+  mutate(n_tokens = str_remove(n_tokens, "&nbsp;"),
+         n_tokens = str_remove(n_tokens, "~"),
+         n_tokens = as.double(n_tokens),
+         name = str_c(name, "\n", formatC(n_tokens, format="f", big.mark=",", digits=0), " tok.")) |> 
+  arrange(-n_tokens) |> 
+  ggplot(aes(area = n_tokens, label = name))+
+  geom_treemap(fill = "white", color = "black", size = 5) +
+  geom_treemap_text(grow = TRUE, reflow = TRUE)
+```
+
+## Bilingual Corpora
+
+```{r}
+resources_data |> 
+  filter(subtype == "bilingual") |> 
+  distinct(name, n_tokens) |> 
+  mutate(n_tokens = str_remove(n_tokens, "&nbsp;"),
+         n_tokens = str_remove(n_tokens, "~"),
+         n_tokens = as.double(n_tokens),
+         name = str_c(name, "\n", formatC(n_tokens, format="f", big.mark=",", digits=0), " tok.")) |> 
+  arrange(-n_tokens) |> 
+  ggplot(aes(area = n_tokens, label = name))+
+  geom_treemap(fill = "white", color = "black", size = 5) +
+  geom_treemap_text(grow = TRUE, reflow = TRUE)
+```
+
+## Bilingual and Dialectal Corpora
+
+```{r}
+#| eval: false
+resources_data |> 
+  filter(subtype %in% c("bilingual", "dialectal")) |> 
+  distinct(name, subtype, lat, lon) |> 
+  group_by(name, subtype) |> 
+  slice_sample(n = 1) ->
+  for_map
+
+library(lingtypology)
+map.feature(languages = "fake",
+            features = for_map$subtype,
+            latitude = for_map$lat,
+            longitude = for_map$lon,
+            tile = "Esri.WorldGrayCanvas", 
+            minimap = TRUE, 
+            width = 8,
+            minimap.position = "bottomleft", 
+            scale.bar.position = "bottomright")
+```
+
+```{r}
+#| fig-align: center
+#| out-height: 85%
+#| fig-cap: Created with `lingtypology` [@moroz17]
+
+knitr::include_graphics("images/map.png")
+```
+
+## {}
+
+\vfill
+\centering \LARGE
+\alert{Can we analyze variation of linguistic features across all corpora?} \pause
+
+\alert{What are the factors that influence variation?} \pause
+
+\alert{Can we find different variation patterns?}
+\vfill
 
 # The DiaL2 project
+
+## The DiaL2 team
+
+```{r}
+#| layout-ncol: 4
+#| fig-subcap: 
+#|  - "Maria Ermolova"
+#|  - "Anna Grishanova"
+#|  - "Natalia Koshelyuk"
+#|  - "George Moroz"
+#|  - "Chiara Naccarato"
+#|  - "Anastasia Yakovleva"
+#|  - "Svetlana Zemicheva"
+
+knitr::include_graphics("images/yermolova.jpeg")
+knitr::include_graphics("images/grishanova.png")
+knitr::include_graphics("images/koshelyuk.jpeg")
+knitr::include_graphics("images/moroz.jpeg")
+knitr::include_graphics("images/naccarato.jpg")
+knitr::include_graphics("images/yakovleva.jpg")
+knitr::include_graphics("images/zemicheva.jpeg")
+```
 
 # The DiaL2 pipeline
 
