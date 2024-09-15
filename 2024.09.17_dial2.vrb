@@ -1,0 +1,18 @@
+\frametitle{Statistical modelling}
+\phantomsection\label{statistical-modelling}
+\begin{center}
+\includegraphics[width=0.8\textwidth,height=\textheight]{images/l2_num_constr_model_prediction_by_dice_coefficient_education_num_type.png}
+\end{center}
+
+\begin{itemize}
+\tightlist
+\item
+  Logistic regression:
+  \small \texttt{standardness\ \textasciitilde{}\ Dice\ coefficient\ +\ year\ of\ birth\ +\ education\ +\ numeral\ type\ +\ gender\ +\ (1\textbar{}L1\ family/speaker\ id)}
+  \normalsize
+\item
+  Conditional importance of the variables in our model (generalized R
+  squared): collocationality (Dice coefficient) \textgreater{} education
+  \textgreater{} year of birth \textgreater{} numeral type
+  \textgreater{} gender
+\end{itemize}

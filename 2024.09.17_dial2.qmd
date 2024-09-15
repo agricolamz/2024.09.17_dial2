@@ -202,8 +202,10 @@ knitr::include_graphics("images/map.png")
 - Daghestanian Russian [@daniel10; @panova21]
 - Russian of Erzya speakers [@shagal16]
 - Russian of Kazakh speakers [@rakhilina18]
+- Contact Russian of Northern Siberia and the Russian Far East [@stoynova19; @stoynova21]
+- Russian of Moksha speakers [@kashkin20]
+- Russian of Hill Mari [@kashkin22]
 - Russian of Nganasan speakers [@khomchenkova20]
-- Russian of Nanai and Ulcha speakers [@stoynova21]
 
 # The DiaL2 project
 
@@ -390,6 +392,67 @@ knitr::include_graphics("images/moroz.jpeg")
 - We use the terms “existential negation” and “negative existential constructions” (NECs) in a wider sense to include constructions that are sometimes referred to as “locative negation” (*X is/are not in some place*, in which X is a definite subject) and “possessive negation” (*Y does/do not have X*); cf. [@veselinova13 110--111]
 - All of them predicate absolute absence rather than relative absence, and Russian employs one and the same strategy in all three cases, which is different from the strategy employed in standard negation, i.e. negation of overt verb predicates
 
+## Non-standard marking in NECs
+
+- Variation in NECs in bilingual corpora (+ comparison with the monolinguals’ variety of Russian spoken in Zvenigorod)
+
+e.g. *gaz ne bylo* vs. *gaza ne bylo*
+
+- Previous research on other L2 Russian varieties
+    - Nanai and Ulcha Russian [@stoynova19: 27]
+    - Moksha Russian [@kashkin20: 116]
+    - Hill Mari Russian [@kashkin22: 39]
+- Usually treated as a contact phenomenon because in the L1s of Russian bilinguals who display this trait there is no genitive (or any other special) marking of negated subjects
+
+## Research questions
+
+- Does the amount of variation in NECs differ across corpora and/or among speakers of the same variety?
+- Can variation in NECs be explained in terms of contact influence?
+- Do other factors promote or hinder variation in NECs?
+
+## The database and parameters of data annotation
+
+2,309 observations
+
+```{r}
+#| out-width: 105%
+#| fig-align: center
+
+knitr::include_graphics("images/l2_neg_exist_constr_df_structure.png")
+```
+
+## Fully standard (58%) vs. non-standard speakers (42%)
+
+```{r}
+#| out-width: 93%
+#| fig-align: center
+
+knitr::include_graphics("images/l2_neg_exist_constr_distribution_of_speakers_by_standardness_across_corpora.png")
+```
+
+
+## Proportion of non-standard occurrences per corpus
+
+## Types of non-standard marking
+
+- Neuter copula
+    - *gaz ne bylo*
+
+- Non-neuter copula
+    - *dom[a]{.underline} ne byl*
+
+- Agreeing subject (could be pattern borrowing for Daghestan)
+    - *bogatye ljudi ne byli*
+
+## Statistical modelling
+
+## Preliminary conclusions
+
+- Findings comparable to those obtained for NCs
+- Variation attested in all L2 corpora, but not to the same extent in each of them
+- Daghestan as a more uniform variety
+- Not all cases of variation can be explained by contact
+ 
 # The DiaL2 sideproject
 
 ## The DiaL2 sideproject
