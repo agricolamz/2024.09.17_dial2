@@ -390,7 +390,7 @@ knitr::include_graphics("images/l2_prep_drop_distribution_of_speakers_by_standar
 ## Findings
 
 ```{r}
-#| out-height: 70%
+#| out-height: 60%
 #| fig-align: center
 
 knitr::include_graphics("images/l2_prep_drop_v_drop_first_sound.png")
@@ -651,5 +651,12 @@ knitr::include_graphics("images/moroz.jpeg")
 ```
 
 # Plans
+
+## Plans
+
+- add and analyze more corpora \pause
+- annotate more features \pause
+- make an Atlas of analyzed features \pause
+- analyze how features interact within the speaker
 
 # References
