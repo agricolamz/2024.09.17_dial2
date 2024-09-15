@@ -1380,4 +1380,226 @@ Package fontspec Info:
 (fontspec)             latinmodern-math scale = 0.941990656169676.
 
 
-Packag
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 0.941896457104059.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 0.941990656169676.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 0.941896457104059.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 0.941990656169676.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 0.941896457104059.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 0.941990656169676.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 0.941896457104059.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'latinmodern-math.otf(3)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=9.3075-},{Size=6.57-9.3075,Font=latinmodern-math.otf,Style=MathScript},{Size=-6.57,Font=latinmodern-math.otf,Style=MathScriptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=0.9999,FontAdjustment={\fontdimen
+(fontspec)             8\font =0.41258pt\relax \fontdimen 9\font
+(fontspec)             =2.06294pt\relax \fontdimen 10\font =1.72256pt\relax
+(fontspec)             \fontdimen 11\font =1.14494pt\relax \fontdimen 12\font
+(fontspec)             =6.18884pt\relax \fontdimen 13\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <9.3075->s*[0.941896457104059]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6.57-9.3075>s*[0.941896457104059]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6.57>s*[0.941896457104059]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.941896457104059]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 212.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 212.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 212.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 212.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+(./2024.09.17_dial2.nav)
+LaTeX Font Info:    Font shape `TU/Brill(2)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 212.
+LaTeX Font Info:    Font shape `TU/Brill(2)/m/n' will be
+(Font)              scaled to size 14.4pt on input line 213.
+LaTeX Font Info:    Font shape `TU/Brill(2)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 213.
+
+
+LaTeX Font Info:    Font shape `TU/Brill(2)/m/n' will be
+(Font)              scaled to size 4.0pt on input line 213.
+[1
+
+]
+
+[2
+
+]
+File: images/dobrushina.jpg Graphic file (type bmp)
+<images/dobrushina.jpg>
+LaTeX Font Info:    Font shape `TU/Brill(2)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 306.
+LaTeX Font Info:    Font shape `TU/Brill(2)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 306.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.2203pt on input line 306.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.15738pt on input line 306.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 306.
+(/home/agricolamz/.TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.31573pt on input line 306.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.22101pt on input line 306.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.15787pt on input line 306.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 10.31374pt on input line 306.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.2196pt on input line 306.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.15688pt on input line 306.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 306.
+(/home/agricolamz/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 306.
+(/home/agricolamz/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+File: images/daniel.png Graphic file (type bmp)
+<images/daniel.png>
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 9.41986pt on input line 306.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 6.5939pt on input line 306.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 4.70993pt on input line 306.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 9.42078pt on input line 306.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.59454pt on input line 306.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 4.71039pt on input line 306.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.41895pt on input line 306.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.59326pt on input line 306.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.70947pt on input line 306.
+
+
+[3
+
+]
+File: images/dobrushina.jpg Graphic file (type bmp)
+<images/dobrushina.jpg>
+File: images/daniel.png Graphic file (type bmp)
+<images/daniel.png>
+
+
+[4
+
+]
+File: images/dobrushina.jpg Graphic file (type bmp)
+<images/dobrushina.jpg>
+File: images/daniel.png Graphic file (type bmp)
+<images/daniel.png>
+
+
+[5
+
+]
+
+[6
+
+]
+File: 2024.09.17_dial2_files/figure-beamer/unnamed-chunk-4-1.pdf Graphic file (type pdf)
+<use 2024.09.17_dial2_files/figure-beamer/unnamed-chunk-4-1.pdf>
+
+Overfull \vbox (1.1508pt too high) detected at line 324
+ []
+
+
+
+[7
+
+]
+File: 2024.09.17_dial2_files/figure-beamer/unnamed-chunk-5-1.pdf Graphic file (type pdf)
+<use 2024.09.17_dial2_files/figure-beamer/unnamed-chunk-5-1.pdf>
+
+Overfull \vbox (1.1508pt too high) detected at line 329
+ []
+
+
+
+[8
+
+]
+\openout4 = `2024.09.17_dial2.vrb'.
+
+(./2024.09.17_dial2.vrb
+File: images/map.png Graphic file (type bmp)
+<images/map.png>
+LaTeX Font Info:    Font shape `TU/Iosevka(0)/m/n' will be
+(Font)              scaled to size 7.80762pt on input line 9.
+)
+Overfull \vbox (19.95396pt too high) detected at line 342
+ []
+
+
+
+[9
+
+]
+LaTeX Font Info:    Font shape `TU/Brill(2)/m/n' will be
+(Font)              scaled to size 17.28pt on input line 355.
+
+
+[10
+
+]
+
+[11
+
+]
+
+[12
+
+]
+
+[13
+
+]
+
+[14
+
+]
+File: images/yermolova.jpeg Graphic file (type bmp)
+<images/yermolova.jpeg>
+File: images/grishanova.png Graphic file (type bmp)
+<images/grishanova.png>
+File: images/koshelyuk.jpeg Graphic file (type bmp)
+<images/koshelyuk.jpeg>
+File: images/moroz.jpeg Graphic 
