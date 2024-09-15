@@ -81,7 +81,7 @@ library(tidyverse)
 theme_set(theme_minimal()+theme(text = element_text(size = 16)))
 ```
 
-# Precursors of the project
+# Precursors
 
 ## Precursors of the project
 
@@ -233,6 +233,14 @@ knitr::include_graphics("images/zemicheva.jpeg")
 
 ## The DiaL2 pipeline
 
+- collect all `.eaf` files
+- extract transcriptions using the `phonfieldwork` R package [@moroz23]
+- use the `udpipe` package in order to gather morphological and syntactical annotation
+- filter the result table for particular feature selected by a researcher
+- annotate standardness of the utterances
+- remove fully-standard speakers
+- model the standardness of the utterances using sociolinguistic and linguistic features as predictors
+
 # The DiaL2 results
 
 ## Some results
@@ -374,6 +382,66 @@ knitr::include_graphics("images/naccarato.jpg")
 knitr::include_graphics("images/moroz.jpeg")
 ```
 
+## Motivation
+
+- widespread feature
+- was studied in standard Russian & bilingual varieties
+- in standard Russian some special numerative forms tend to appear in numeral constructions (Kholodilova, forthcoming)
+- dialect speech may be controversial to the tendencies observed in other colloquial varieties
+
+## Examples
+
+- Num(not-paucal)~nom,acc,gen~ + N~m,n-Gen.Pl~
+    - pjat’ xozjaev-\alert{ov} (dial. five owner-Gen.Pl)
+    - pjat’ xozja-ev-Ø (stnd. five owner-Pl-Gen)
+- Num(paucal)~acc,gen~ + N~m,n-Gen.Pl~
+    -  tridcat-i dv-ux god-\alert{ov} (dial. thirty-Gen two-Gen year-Gen.Pl)
+    - tridcat-i dv-ux let-Ø (stnd. thirty-Gen two-Gen year-Gen.Pl)
+    
+## Research questions
+
+- What factors may affect the probability of use of dialect Gen.Pl forms in numeral
+constructions?
+    - Overall frequency of dialect Gen.Pl in different contexts
+    - Noun stem
+    - Numeral-Noun collocationality level
+    - Numeral form (Nom/Gen)
+    - Year of birth
+    - Education level
+    - Gender
+- Does dialect “overuse” [@kasatkin05] of the -*ov* ending affect cases like *kilogram* vs
+*kilogram-ov*?
+
+## Does dialect “overuse” of the -*ov* ending affect measure words?
+
+No
+
+## Does noun stem play a role?
+
+## Geographical distribution
+
+## Does overall frequency of dialect Gen.Pl significant?
+
+## Is year of birth significant?
+
+## Is education level significant?
+
+## Is the level of collocationality significant?
+
+## Is the numeral form significant?
+
+## Conclusions
+
+- Dialect “overuse” of the -*ov* ending doesn’t affect mesuare words: zero inflexion forms (*kilogram*) are found in more than 90% of contexts
+- Early year of birth & low education level make the probability of using dialect
+Gen.Pl form higher
+- ‘The most frequent pairs survive’ (Chiara): the probability of dialect form
+higher for nouns which often cooccur with numerals
+- The type of noun stem seems to be significant
+- Potential contact influence in the case of Spiridonova Buda? (Belorussian)
+- The correlation between the frequency of dialect Gen.Pl forms in numeral
+constructions and other types of contexts is questionable
+
 ## Negative Existential Constructions
 
 ```{r}
@@ -430,8 +498,14 @@ knitr::include_graphics("images/l2_neg_exist_constr_df_structure.png")
 knitr::include_graphics("images/l2_neg_exist_constr_distribution_of_speakers_by_standardness_across_corpora.png")
 ```
 
-
 ## Proportion of non-standard occurrences per corpus
+
+```{r}
+#| out-width: 93%
+#| fig-align: center
+
+knitr::include_graphics("images/l2_neg_exist_constr_distribution_of_nstd_forms_without_fully_std_speakers.png")
+```
 
 ## Types of non-standard marking
 
@@ -453,7 +527,7 @@ knitr::include_graphics("images/l2_neg_exist_constr_distribution_of_speakers_by_
 - Daghestan as a more uniform variety
 - Not all cases of variation can be explained by contact
  
-# The DiaL2 sideproject
+# Sideproject
 
 ## The DiaL2 sideproject
 
