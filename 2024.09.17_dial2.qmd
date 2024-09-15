@@ -658,5 +658,3 @@ knitr::include_graphics("images/moroz.jpeg")
 - annotate more features \pause
 - make an Atlas of analyzed features \pause
 - analyze how features interact within the speaker
-
-# References
