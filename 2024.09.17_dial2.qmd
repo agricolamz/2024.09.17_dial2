@@ -207,7 +207,7 @@ knitr::include_graphics("images/map.png")
 - Russian of Hill Mari [@kashkin22]
 - Russian of Nganasan speakers [@khomchenkova20]
 
-# The DiaL2 project
+# DiaL2
 
 ## The DiaL2 team
 
@@ -241,15 +241,7 @@ knitr::include_graphics("images/zemicheva.jpeg")
 - remove fully-standard speakers
 - model the standardness of the utterances using sociolinguistic and linguistic features as predictors
 
-# The DiaL2 results
-
-## Some results
-
-- Non-standard numeral constructions in L2 Russian
-- Propositional Drop
-- Propositional Drop in Chuvash
-- Dialect Genitive Plural Forms of Masculine and Neuter Nouns in Numeral Constructions
-- Negative Existential Constructions
+# Num constructions
 
 ## Non-standard numeral constructions in L2 Russian
 
@@ -346,7 +338,9 @@ collocationality (Dice coefficient) > education > year of birth > numeral type >
 - Daghestanian Russian as a more uniform variety, probably due to a lower pervasiveness of Russian in every-day life, especially in the more isolated communities of the highlands
 - The variables that turned out to be statistically significant are all logically related to L2 proficiency and exposure to the input, but there is no robust evidence for a contact explanation
 
-## Propositional Drop
+# Prepositional drop
+
+## Preposition drop in Russian spoken by Mari and Beserman bilinguals
 
 ```{r}
 #| layout-ncol: 3
@@ -360,13 +354,124 @@ knitr::include_graphics("images/koshelyuk.jpeg")
 knitr::include_graphics("images/moroz.jpeg")
 ```
 
-## Propositional Drop in Chuvash
+## Aims and Research Questions
+
+- a corpus-based study of preposition drop (p-drop) in the speech of Mari-Russian and Beserman-Russian bilinguals compared to the speech of Russian monolinguals;
+- demonstrate that the prepositions *v* ‘in’, *k* ‘to’, *s* ‘with’ are omitted in the speech of bilinguals more often than in monolinguals’ speech;
+- propose some possible explanations for the variation attested across different bilingual speakers.
+
+## Methods and Data
+
+- spontaneous oral speech of 20 Beserman-Russian and Mari-Russian bilinguals;
+- total number of tokens ~166,000;
+- in comparison with the speech of nine Russian monolinguals.
+
+## Methods and Data
+
+```{r}
+#| out-height: 90%
+#| fig-align: center
+
+knitr::include_graphics("images/l2_prep_drop_df_structure.png")
+```
+
+## Findings
+
+```{r}
+#| out-height: 70%
+#| fig-align: center
+
+knitr::include_graphics("images/l2_prep_drop_distribution_of_speakers_by_standardness_across_corpora.png")
+```
+
+- both bilinguals and monolinguals omit prepositions;
+- however, they do it in different contexts and for different reasons
+
+## Findings
+
+```{r}
+#| out-height: 70%
+#| fig-align: center
+
+knitr::include_graphics("images/l2_prep_drop_v_drop_first_sound.png")
+```
+
+- In bilinguals, p-drop can possibly be explained by phonetic interference from their native languages (avoiding consonant cluster);
+- monolinguals mainly omit prepositions in lexicalized expressions (v obschem ‘in general’).
+
+## Findings: sociolinguistic factors
+
+```{r}
+#| out-height: 75%
+#| fig-align: center
+
+knitr::include_graphics("images/l2_prep_drop_model_prediction_year.png")
+```
+
+The older and less educated a person is, the higher the probability of prep-drop in their speech.
+
+## Findings: sociolinguistic factors
+
+```{r}
+#| out-height: 75%
+#| fig-align: center
+
+knitr::include_graphics("images/l2_prep_drop_model_prediction_education.png")
+```
+
+The older and less educated a person is, the higher the probability of prep-drop in their speech.
+
+## Preposition Drop in Chuvash
 
 ```{r}
 #| fig-cap: "Anna Grishanova"
 
 knitr::include_graphics("images/grishanova.png")
 ```
+
+## Preposition drop in Chuvash Russian
+
+- The following prepositions were dropped at least once: v ‘in/to’, u ‘at’, na ‘on/to’, s ‘with/from/off’, iz ‘from/of’, do ‘up to/until’, čerez ‘via/through/later’.
+
+- This includes syllabic prepositions (such as na ‘on’) that do not tend to drop in the speech of Mari and Beserman bilinguals:
+
+- [na] kazhdom povorote stolba stoit ‘A pillar stands on every turn’
+
+## Preposition drop in Chuvash Russian
+
+- The omission of syllabic prepositions and sporadic nature of the drop of certain prepositions compelled a more semantic approach to this data. Thus, every context in the dataset was annotated according to four big semantic groups: location, direction, source and time. 
+- Another interesting feature found in Chuvash Russian speech was non-standard case usage, in particular the expansion of the Nominative case. Thus, we also annotated instances of non-standard case usage and used the following word’s case as a factor in statistical modeling.
+
+## Preposition drop in Chuvash Russian
+
+We implemented a nested mixed effect logistic regression model. 
+
+Sociolinguistic factors like **age** and **years of education** appeared to be not  significant. The significant factors turned out to be: 
+
+- semantics of the prepositional phrase
+- the plosiveness of the following word’s first sound
+- the Nominative case of the following word
+- dice coefficient
+- the standardness of the following word’s case
+
+## Preposition drop in Chuvash Russian
+
+The plosiveness of the following word’s first sound increases the probability of a preposition drop
+
+## Preposition drop in Chuvash Russian
+
+The Nominative or a non-standard case of the following wordform increase the probability of a preposition drop
+
+## Preposition drop in Chuvash Russian
+
+On the other hand, the semantics of the prepositional phrase not being that of location, direction, source and time decrease the probability of a preposition drop. 
+
+## Preposition drop in Chuvash Russian
+
+Finally, just like in the study of preposition drop in the speech of Mari and Beserman bilinguals, higher degree of collocationality (dice coefficient) decreases the probability of the omission of a preposition. 
+
+
+# Gen Pl Forms
 
 ## Dialect Genitive Plural Forms in Numeral Constructions
 
@@ -441,6 +546,8 @@ higher for nouns which often cooccur with numerals
 - Potential contact influence in the case of Spiridonova Buda? (Belorussian)
 - The correlation between the frequency of dialect Gen.Pl forms in numeral
 constructions and other types of contexts is questionable
+
+# Neg Exist constructions
 
 ## Negative Existential Constructions
 
@@ -543,6 +650,6 @@ knitr::include_graphics("images/gich.png")
 knitr::include_graphics("images/moroz.jpeg")
 ```
 
-# Future plans
+# Plans
 
 # References
