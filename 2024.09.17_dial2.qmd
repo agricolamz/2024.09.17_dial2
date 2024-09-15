@@ -320,7 +320,7 @@ knitr::include_graphics("images/l2_num_constr_distribution_of_nstd_forms_with_di
 ## Statistical modelling
 
 ```{r}
-#| out-width: 64%
+#| out-width: 80%
 #| fig-align: center
 
 knitr::include_graphics("images/l2_num_constr_model_prediction_by_dice_coefficient_education_num_type.png")
@@ -371,6 +371,24 @@ knitr::include_graphics("images/zemicheva.jpeg")
 knitr::include_graphics("images/naccarato.jpg")
 knitr::include_graphics("images/moroz.jpeg")
 ```
+
+## Negative Existential Constructions
+
+```{r}
+#| layout-ncol: 3
+#| fig-subcap: 
+#|  - "Chiara Naccarato"
+#|  - "George Moroz"
+
+knitr::include_graphics("images/naccarato.jpg")
+knitr::include_graphics("images/moroz.jpeg")
+```
+
+## Negative Existential Constructions
+
+- Existential negation = negation strategies used in existential sentences of the type *there is/are no* X (*somewhere*), in which the subject is typically non-referential
+- We use the terms “existential negation” and “negative existential constructions” (NECs) in a wider sense to include constructions that are sometimes referred to as “locative negation” (*X is/are not in some place*, in which X is a definite subject) and “possessive negation” (*Y does/do not have X*); cf. [@veselinova13 110--111]
+- All of them predicate absolute absence rather than relative absence, and Russian employs one and the same strategy in all three cases, which is different from the strategy employed in standard negation, i.e. negation of overt verb predicates
 
 # The DiaL2 sideproject
 
