@@ -75,6 +75,7 @@ abstract: |
 ```{r}
 #| include: false
 
+# setwd("/home/agricolamz/work/materials/2024.09.17_dial2")
 library(treemapify)
 library(tidyverse)
 theme_set(theme_minimal()+theme(text = element_text(size = 16)))
@@ -196,6 +197,14 @@ knitr::include_graphics("images/map.png")
 \alert{Can we find different variation patterns?}
 \vfill
 
+## Previous publications
+
+- Daghestanian Russian [@daniel10; @panova21]
+- Russian of Erzya speakers [@shagal16]
+- Russian of Kazakh speakers [@rakhilina18]
+- Russian of Nganasan speakers [@khomchenkova20]
+- Russian of Nanai and Ulcha speakers [@stoynova21]
+
 # The DiaL2 project
 
 ## The DiaL2 team
@@ -220,11 +229,164 @@ knitr::include_graphics("images/yakovleva.jpg")
 knitr::include_graphics("images/zemicheva.jpeg")
 ```
 
-# The DiaL2 pipeline
+## The DiaL2 pipeline
 
 # The DiaL2 results
 
+## Some results
+
+- Non-standard numeral constructions in L2 Russian
+- Propositional Drop
+- Propositional Drop in Chuvash
+- Dialect Genitive Plural Forms of Masculine and Neuter Nouns in Numeral Constructions
+- Negative Existential Constructions
+
+## Non-standard numeral constructions in L2 Russian
+
+```{r}
+#| layout-ncol: 2
+#| fig-subcap: 
+#|  - "Chiara Naccarato"
+#|  - "George Moroz"
+
+knitr::include_graphics("images/naccarato.jpg")
+knitr::include_graphics("images/moroz.jpeg")
+```
+
+## Non-standard numeral constructions in L2 Russian
+
+- Variation in numeral constructions (NCs) in bilingual corpora
+    - e.g. dva brat vs. dva brata
+- Previous research on other L2 Russian varieties
+    - Stoynova (2021) on Nanai and Ulcha Russian: evidence for pattern borrowing
+- Also mentioned by
+    - Shagal (2016: 369-370) for Erzya Russian
+    - Rakhilina & Kazkenova (2018: 610) for Kazakh Russian  
+
+## Research questions
+
+- Does the amount of variation in NCs differ across corpora and/or among speakers of the same variety?
+- Can variation in NCs be explained in terms of contact influence?
+- Do other factors promote or hinder variation in NCs?
+
+## The database and parameters of data annotation
+
+4,144 observations
+
+```{r}
+#| out-height: 84%
+#| fig-align: center
+
+knitr::include_graphics("images/l2_num_constr_df_structure.png")
+```
+
+## Fully standard (71.3%) vs. non-standard speakers (28.7%)
+
+```{r}
+#| out-height: 93%
+#| fig-align: center
+
+knitr::include_graphics("images/l2_num_constr_distribution_of_speakers_by_standardness_across_corpora.png")
+```
+
+## Proportion of non-standard occurrences per corpus
+
+1,748 observations 
+
+```{r}
+#| out-height: 84%
+#| fig-align: center
+
+knitr::include_graphics("images/l2_num_constr_distribution_of_nstd_forms_without_fully_std_speakers.png")
+```
+
+## Distribution of n-std forms with different types of numerals
+
+::: {layout="[35,65]"}
+
+- NOM instead of GEN is frequent both with paucals and other numerals
+- n-std GEN is attested sporadically 
+- other case forms are even less frequent
+- only ~45% of n-std expressions could in principle be explained by L1 pattern borrowing
+
+```{r}
+#| out-width: 110%
+#| fig-align: center
+
+knitr::include_graphics("images/l2_num_constr_distribution_of_nstd_forms_with_different_types_of_numerals.png")
+```
+:::
+
+## Statistical modelling
+
+```{r}
+#| out-width: 64%
+#| fig-align: center
+
+knitr::include_graphics("images/l2_num_constr_model_prediction_by_dice_coefficient_education_num_type.png")
+```
+
+- Logistic regression: \small `standardness ~ Dice coefficient + year of birth + education + numeral type + gender + (1|L1 family/speaker id)` \normalsize
+- Conditional importance of the variables in our model (generalized R squared):
+collocationality (Dice coefficient) > education > year of birth > numeral type > gender
+
+## Conclusions
+
+- Variation in NCs is attested in all L2 corpora, but not to the same extent in each of them
+- Daghestanian Russian as a more uniform variety, probably due to a lower pervasiveness of Russian in every-day life, especially in the more isolated communities of the highlands
+- The variables that turned out to be statistically significant are all logically related to L2 proficiency and exposure to the input, but there is no robust evidence for a contact explanation
+
+## Propositional Drop
+
+```{r}
+#| layout-ncol: 3
+#| fig-subcap: 
+#|  - "Anastasia Yakovleva"
+#|  - "Natalia Koshelyuk"
+#|  - "George Moroz"
+
+knitr::include_graphics("images/yakovleva.jpg")
+knitr::include_graphics("images/koshelyuk.jpeg")
+knitr::include_graphics("images/moroz.jpeg")
+```
+
+## Propositional Drop in Chuvash
+
+```{r}
+#| fig-cap: "Anna Grishanova"
+
+knitr::include_graphics("images/grishanova.png")
+```
+
+## Dialect Genitive Plural Forms in Numeral Constructions
+
+```{r}
+#| layout-ncol: 3
+#| fig-subcap: 
+#|  - "Svetlana Zemicheva"
+#|  - "Chiara Naccarato"
+#|  - "George Moroz"
+
+knitr::include_graphics("images/zemicheva.jpeg")
+knitr::include_graphics("images/naccarato.jpg")
+knitr::include_graphics("images/moroz.jpeg")
+```
+
 # The DiaL2 sideproject
+
+## The DiaL2 sideproject
+
+```{r}
+#| layout-ncol: 3
+#| fig-subcap: 
+#|  - "Anna Panova"
+#|  - "Olga Gich"
+#|  - "George Moroz"
+
+knitr::include_graphics("images/panova.jpeg")
+knitr::include_graphics("images/gich.png")
+knitr::include_graphics("images/moroz.jpeg")
+```
 
 # Future plans
 
