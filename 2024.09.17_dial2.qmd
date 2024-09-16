@@ -560,8 +560,6 @@ No
 
 ## Does noun stem play a role?
 
-\pause
-
 Yes
 
 | stem type | dialect | standard | total | dialect share |
@@ -729,6 +727,13 @@ knitr::include_graphics("images/l2_neg_exist_constr_distribution_of_nstd_forms_w
     - *bogatye ljudi ne byli*
 
 ## Statistical modelling
+
+```{r}
+#| out-width: 110%
+#| fig-align: center
+
+knitr::include_graphics("images/l2_neg_exist_constr_stats.png")
+```
 
 ## Preliminary conclusions
 
