@@ -469,7 +469,7 @@ The plosiveness of the following word’s first sound increases the probability 
 ## Preposition drop in Chuvash Russian
 
 ```{r}
-#| out-height: 75%
+#| out-height: 72%
 #| fig-align: center
 
 knitr::include_graphics("images/l2_prep_drop_model_case.png")
@@ -494,7 +494,7 @@ On the other hand, the semantics of the prepositional phrase not being that of l
 #| out-height: 70%
 #| fig-align: center
 
-knitr::include_graphics("images/l2_prep_drop_model_dice_coef.png")
+knitr::include_graphics("images/l2_prep_drop_model_dice.png")
 ```
 
 Finally, just like in the study of preposition drop in the speech of Mari and Beserman bilinguals, higher degree of collocationality (dice coefficient) decreases the probability of the omission of a preposition. 
