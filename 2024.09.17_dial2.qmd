@@ -588,7 +588,7 @@ knitr::include_graphics("images/dial_num_constr_map.png")
 
 No geographical pattern observed (but, see Spiridonova Buda).
 
-## Does overall frequency of dialect Gen.Pl significant?
+## Is overall frequency of dialect Gen.Pl significant?
 
 - corpus: Dvina
 - *godov*: 25
@@ -596,9 +596,9 @@ No geographical pattern observed (but, see Spiridonova Buda).
 - % *godov*: 75
 - -*ov* in other than numeral contexts: 9
 - corpus size: 68,010
-- imp -*ov*: 132
+- ipm -*ov*: 132
 
-Example of 'other' context: *ne bylo cerkv\alert{ov}* (stand *cerkv\alert{ej}*) ‘the was no churches’
+Example of 'other' contexts: *ne bylo cerkv\alert{ov}* (stand *cerkv\alert{ej}*) ‘there were no churches’
 
 ## Pearson correlation coefficient: 0.699
 
@@ -624,7 +624,7 @@ knitr::include_graphics("images/dial_num_constr_year_of_birth.png")
 knitr::include_graphics("images/dial_num_constr_years_of_education.png")
 ```
 
-## Is the collocationality significant?
+## Is collocationality significant?
 
 ```{r}
 #| out-width: 110%
@@ -753,45 +753,45 @@ knitr::include_graphics("images/gich.png")
 knitr::include_graphics("images/moroz.jpeg")
 ```
 
-## Objective of the Project
+## Aim of the project
 
-- Typos and spelling errors in corpora complicate the search.
-- Looking for the mistakes in the corpora manually is time-consuming.
-- Standard spell-checking algorithms are ineffective for cleaning collected data due to the presence of non-literary wordforms.
-- Spell-checkers for the literary Russian treat dialectal wordforms as spelling errors.
+- Typos and spelling errors in corpora complicate the search
+- Looking for mistakes in the corpora manually is time-consuming
+- Standard spell-checking algorithms are ineffective for cleaning data due to the presence of non-standard wordforms
+- Spell-checkers for Standard Russian treat dialectal wordforms as spelling errors
     - *Они все разъехадчи* —> *Они все разъехались*
-- Objective: create a mechanism for automatic search for errors and typos.
-- It is crucial for a future mechanism to distinguish between a typo and a dialectal wordform.
+- Objective: create a mechanism for automatic search for errors and typos
+- It is crucial for the future mechanism to distinguish between a typo and a dialectal wordform
 
 ## Hapax Legomena
 
-- First Approach: Analyze hapax legomena (tokens that appear only once in the corpora) to identify typos.
+- First Approach: Analyze hapax legomena (tokens that appear only once in the corpora) to identify typos
 - Pipeline:
     - Select all hapax legomena
     - Put them in the normal form
-    - Check with a spellchecker and dictionaries.
-- Results: Low effectiveness, most part of the hapax legomena are not typos.
-    - Out of 2000 hapax legomena, only 10 were typos.
+    - Check with a spellchecker and dictionaries
+- Results: Low effectiveness, most part of the hapax legomena are not typos
+    - Out of 2,000 hapax legomena, only 10 were typos
     
 ## Utilizing LLMs and Machine Learning
 
-- First Idea: Utilize prompts for Chat GPT-4o Mini and Gemini 1.5 Pro models.
-- Testing: Verification on test sentences. 
-- The results were satisfactory, especially when combining models.
+- First Idea: Utilize prompts for Chat GPT-4o Mini and Gemini 1.5 Pro models
+- Testing: Verification on test sentences 
+- The results were satisfactory, especially when combining models
 - Further Steps:
-    - Use free and local models.
-    - Develop the method further.
+    - Use free and local models
+    - Develop the method further
 
 ## Machine Learning and BERT
 
-- Objective: Train the model to predict if a word is spelled correctly or if it is dialectal.
+- Objective: Train the model to predict if a word is spelled correctly or if it is dialectal
 - Pipeline:
     - Annotation:
         - D — dialectal wordform
         - E — typo
         - O — absence of dialectal wordforms or typos
-    - Create a synthetic dataset of typos to balance the classes.
-    - Train a model to assign labels to words in a sentence.
+    - Create a synthetic dataset of typos to balance the classes
+    - Train a model to assign labels to words in a sentence
     - Example of a row in the dataset:
 
 ```
@@ -803,18 +803,18 @@ knitr::include_graphics("images/moroz.jpeg")
 
 ## Machine Learning and BERT
 
-- Results: promising but imperfect, the training dataset needs to be augmented.
+- Results: promising but imperfect, the training dataset needs to be augmented
 - Further Steps:
-    - Train the BERT model on the annotated corpus.
-    - Evaluate the accuracy of the model on test data.
-    - Apply the model to clean data from typos.
+    - Train the BERT model on the annotated corpus
+    - Evaluate the accuracy of the model on test data
+    - Apply the model to clean data from typos
 
 # Future Plans
 
 ## Future Plans
 
 - create more corpora
-    - we can do within the Lab too (thanks to `whisper` speech to text model) \pause
+    - we can do this within the Lab too (thanks to `whisper` speech to text model) \pause
 - annotate more features \pause
 - make an Atlas of analyzed features \pause
 - analyze how features interact within the speaker
