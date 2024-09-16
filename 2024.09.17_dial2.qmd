@@ -206,6 +206,7 @@ knitr::include_graphics("images/map.png")
 - Russian of Moksha speakers [@kashkin20]
 - Russian of Hill Mari [@kashkin22]
 - Russian of Nganasan speakers [@khomchenkova20]
+- Dialect of Ustja River Basin [@daniel19]
 
 # DiaL2
 
@@ -456,20 +457,47 @@ Sociolinguistic factors like **age** and **years of education** appeared to be n
 
 ## Preposition drop in Chuvash Russian
 
+```{r}
+#| out-height: 75%
+#| fig-align: center
+
+knitr::include_graphics("images/l2_prep_drop_model_plosive.png")
+```
+
 The plosiveness of the following word’s first sound increases the probability of a preposition drop
 
 ## Preposition drop in Chuvash Russian
+
+```{r}
+#| out-height: 75%
+#| fig-align: center
+
+knitr::include_graphics("images/l2_prep_drop_model_case.png")
+```
 
 The Nominative or a non-standard case of the following wordform increase the probability of a preposition drop
 
 ## Preposition drop in Chuvash Russian
 
+```{r}
+#| out-height: 70%
+#| fig-align: center
+
+knitr::include_graphics("images/l2_prep_drop_model_semantics.png")
+```
+
 On the other hand, the semantics of the prepositional phrase not being that of location, direction, source and time decrease the probability of a preposition drop. 
 
 ## Preposition drop in Chuvash Russian
 
-Finally, just like in the study of preposition drop in the speech of Mari and Beserman bilinguals, higher degree of collocationality (dice coefficient) decreases the probability of the omission of a preposition. 
+```{r}
+#| out-height: 70%
+#| fig-align: center
 
+knitr::include_graphics("images/l2_prep_drop_model_dice_coef.png")
+```
+
+Finally, just like in the study of preposition drop in the speech of Mari and Beserman bilinguals, higher degree of collocationality (dice coefficient) decreases the probability of the omission of a preposition. 
 
 # Gen Pl Forms
 
@@ -654,7 +682,10 @@ knitr::include_graphics("images/moroz.jpeg")
 
 ## Plans
 
-- add and analyze more corpora \pause
+- create more corpora
+    - we can do within the Lab too (thanks to `whisper` speech to text model) \pause
 - annotate more features \pause
 - make an Atlas of analyzed features \pause
 - analyze how features interact within the speaker
+
+# References
