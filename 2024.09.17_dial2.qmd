@@ -14,6 +14,7 @@ format:
        \captionsetup[figure]{labelformat=empty}
        \captionsetup[subfigure]{labelformat=empty}
        \setbeamercolor{alerted text}{fg=teal}
+       \newcommand{\theHtable}{\thetable}
 title: "The DiaL2 project: pipeline, results, news and future work"
 lang: en
 author: 
@@ -199,14 +200,14 @@ knitr::include_graphics("images/map.png")
 
 ## Previous publications
 
-- Daghestanian Russian [@daniel10; @panova21]
+- Daghestanian Russian [@daniel10; @naccarato21; @panova21]
 - Russian of Erzya speakers [@shagal16]
 - Russian of Kazakh speakers [@rakhilina18]
 - Contact Russian of Northern Siberia and the Russian Far East [@stoynova19; @stoynova21]
 - Russian of Moksha speakers [@kashkin20]
 - Russian of Hill Mari [@kashkin22]
 - Russian of Nganasan speakers [@khomchenkova20]
-- Dialect of Ustja River Basin [@daniel19]
+- Dialect of Ustya River Basin [@daniel19]
 
 # DiaL2
 
@@ -547,9 +548,35 @@ constructions?
 
 ## Does dialect “overuse” of the -*ov* ending affect measure words?
 
+\pause
+
 No
 
+| lexeme     | -*ov* | Ø  | total | percentage of Ø forms |
+|------------|-------|----|-------|--------------------|
+| *hectare*  | 2     | 25 | 27    | 93%                |
+| *kilogram* | 2     | 76 | 78    | 97%                |
+| *gram*     | 0     | 58 | 58    | 100%              |
+
 ## Does noun stem play a role?
+
+\pause
+
+Yes
+
+| stem type | dialect | standard | total | dialect share |
+|-----------|---------|----------|-------|---------------|
+| 1 – t     | 503     | 1297     | 1800  | 28%           |
+| 2 – t’    | 20      | 356      | 376   | 5%            |
+| 3 – g     | 3       | 278      | 281   | 1%            |
+| 3* – g    | 3       | 20       | 23    | 13%           |
+| 4 – ž     | 1       | 6        | 7     | 14%           |
+| 5 – č     | 21      | 56       | 77    | 27%           |
+| 6 – a     | 0       | 2        | 2     | 0%            |
+| 7 – I     | 0       | 1        | 1     | 0%            |
+
+Fisher exact test p-value = 0.0004998
+
 
 ## Geographical distribution
 
