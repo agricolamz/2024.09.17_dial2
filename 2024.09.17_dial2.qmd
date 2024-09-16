@@ -98,7 +98,7 @@ knitr::include_graphics("images/daniel.png")
 
 - Multiple sociolinguistic expeditions to Daghestan
 - Several dialect expeditions to Ustya \pause
-- Online corpora available for everyone:
+- Online corpora available for each of them:
     - [Corpus of Russian spoken in Daghestan](https://parasolcorpus.org/dagrus/)
     - [Ustja River Basin Corpus](https://www.parasolcorpus.org/Pushkino/login.php) \pause
     - ... and other bilingual and dialect corpora
@@ -237,8 +237,8 @@ knitr::include_graphics("images/zemicheva.jpeg")
 
 - collect all `.eaf` files
 - extract transcriptions using the `phonfieldwork` R package [@moroz23]
-- use the `udpipe` package in order to gather morphological and syntactical annotation
-- filter the result table for particular feature selected by a researcher
+- use the `udpipe` package in order to gather morphological and syntactic annotation
+- filter the result table for a particular feature selected by the researcher
 - annotate standardness of the utterances
 - remove fully-standard speakers
 - model the standardness of the utterances using sociolinguistic and linguistic features as predictors
@@ -260,7 +260,7 @@ knitr::include_graphics("images/moroz.jpeg")
 ## Non-standard numeral constructions in L2 Russian
 
 - Variation in numeral constructions (NCs) in bilingual corpora
-    - e.g. dva brat vs. dva brata
+    - e.g. *dva* *brat* vs. *dva* *brata*
 - Previous research on other L2 Russian varieties
     - Stoynova (2021) on Nanai and Ulcha Russian: evidence for pattern borrowing
 - Also mentioned by
@@ -340,7 +340,7 @@ collocationality (Dice coefficient) > education > year of birth > numeral type >
 - Daghestanian Russian as a more uniform variety, probably due to a lower pervasiveness of Russian in every-day life, especially in the more isolated communities of the highlands
 - The variables that turned out to be statistically significant are all logically related to L2 proficiency and exposure to the input, but there is no robust evidence for a contact explanation
 
-# Prepositional drop
+# Preposition drop
 
 ## Preposition drop in Russian spoken by Mari and Beserman bilinguals
 
@@ -387,7 +387,7 @@ knitr::include_graphics("images/l2_prep_drop_distribution_of_speakers_by_standar
 ```
 
 - both bilinguals and monolinguals omit prepositions;
-- however, they do it in different contexts and for different reasons
+- however, they do so in different contexts and for different reasons
 
 ## Findings
 
@@ -398,8 +398,8 @@ knitr::include_graphics("images/l2_prep_drop_distribution_of_speakers_by_standar
 knitr::include_graphics("images/l2_prep_drop_v_drop_first_sound.png")
 ```
 
-- In bilinguals, p-drop can possibly be explained by phonetic interference from their native languages (avoiding consonant cluster);
-- monolinguals mainly omit prepositions in lexicalized expressions (v obschem ‘in general’).
+- In bilinguals' speech, p-drop can possibly be explained by phonetic interference from their native languages (avoiding consonant cluster);
+- monolinguals mainly omit prepositions in lexicalized expressions (*v* *obščem* ‘in general’).
 
 ## Findings: sociolinguistic factors
 
@@ -410,7 +410,7 @@ knitr::include_graphics("images/l2_prep_drop_v_drop_first_sound.png")
 knitr::include_graphics("images/l2_prep_drop_model_prediction_year.png")
 ```
 
-The older and less educated a person is, the higher the probability of prep-drop in their speech.
+The older and less educated a person is, the higher the probability of p-drop in their speech.
 
 ## Findings: sociolinguistic factors
 
@@ -421,7 +421,7 @@ The older and less educated a person is, the higher the probability of prep-drop
 knitr::include_graphics("images/l2_prep_drop_model_prediction_education.png")
 ```
 
-The older and less educated a person is, the higher the probability of prep-drop in their speech.
+The older and less educated a person is, the higher the probability of p-drop in their speech.
 
 ## Preposition Drop in Chuvash
 
@@ -433,15 +433,15 @@ knitr::include_graphics("images/grishanova.png")
 
 ## Preposition drop in Chuvash Russian
 
-- The following prepositions were dropped at least once: v ‘in/to’, u ‘at’, na ‘on/to’, s ‘with/from/off’, iz ‘from/of’, do ‘up to/until’, čerez ‘via/through/later’.
+- The following prepositions were dropped at least once: *v* ‘in/to’, *u* ‘at’, *na* ‘on/to’, *s* ‘with/from/off’, *iz* ‘from/of’, *do* ‘up to/until’, *čerez* ‘via/through/later’.
 
-- This includes syllabic prepositions (such as na ‘on’) that do not tend to drop in the speech of Mari and Beserman bilinguals:
+- This includes syllabic prepositions (such as *na* ‘on’) that do not tend to drop in the speech of Mari and Beserman bilinguals:
 
-- [na] kazhdom povorote stolba stoit ‘A pillar stands on every turn’
+- *[na] každom povorote stolba stoit* ‘A pillar stands on every turn’
 
 ## Preposition drop in Chuvash Russian
 
-- The omission of syllabic prepositions and sporadic nature of the drop of certain prepositions compelled a more semantic approach to this data. Thus, every context in the dataset was annotated according to four big semantic groups: location, direction, source and time. 
+- The omission of syllabic prepositions and the sporadic nature of the drop of certain prepositions compelled a more semantic approach to this data. Thus, every context in the dataset was annotated according to four big semantic groups: location, direction, source and time. 
 - Another interesting feature found in Chuvash Russian speech was non-standard case usage, in particular the expansion of the Nominative case. Thus, we also annotated instances of non-standard case usage and used the following word’s case as a factor in statistical modeling.
 
 ## Preposition drop in Chuvash Russian
@@ -465,7 +465,7 @@ Sociolinguistic factors like **age** and **years of education** appeared to be n
 knitr::include_graphics("images/l2_prep_drop_model_plosive.png")
 ```
 
-The plosiveness of the following word’s first sound increases the probability of a preposition drop
+The plosiveness of the following word’s first sound increases the probability of preposition drop
 
 ## Preposition drop in Chuvash Russian
 
@@ -476,7 +476,7 @@ The plosiveness of the following word’s first sound increases the probability 
 knitr::include_graphics("images/l2_prep_drop_model_case.png")
 ```
 
-The Nominative or a non-standard case of the following wordform increase the probability of a preposition drop
+The Nominative or a non-standard case of the following wordform increases the probability of preposition drop
 
 ## Preposition drop in Chuvash Russian
 
@@ -487,7 +487,7 @@ The Nominative or a non-standard case of the following wordform increase the pro
 knitr::include_graphics("images/l2_prep_drop_model_semantics.png")
 ```
 
-On the other hand, the semantics of the prepositional phrase not being that of location, direction, source and time decrease the probability of a preposition drop. 
+On the other hand, the semantics of the prepositional phrase not being that of location, direction, source and time decreases the probability of a preposition drop. 
 
 ## Preposition drop in Chuvash Russian
 
@@ -498,7 +498,7 @@ On the other hand, the semantics of the prepositional phrase not being that of l
 knitr::include_graphics("images/l2_prep_drop_model_dice.png")
 ```
 
-Finally, just like in the study of preposition drop in the speech of Mari and Beserman bilinguals, higher degree of collocationality (dice coefficient) decreases the probability of the omission of a preposition. 
+Finally, just like in the study of preposition drop in the speech of Mari and Beserman bilinguals, higher degree of collocationality (dice coefficient) decreases the probability of omission of a preposition. 
 
 # Gen Pl Forms
 
@@ -521,7 +521,7 @@ knitr::include_graphics("images/moroz.jpeg")
 - widespread feature
 - was studied in standard Russian & bilingual varieties
 - in standard Russian some special numerative forms tend to appear in numeral constructions (Kholodilova, forthcoming)
-- dialect speech may be controversial to the tendencies observed in other colloquial varieties
+- dialect speech may show different tendencies as compared to other spoken varieties of Russian
 
 ## Examples
 
@@ -534,17 +534,17 @@ knitr::include_graphics("images/moroz.jpeg")
     
 ## Research questions
 
-- What factors may affect the probability of use of dialect Gen.Pl forms in numeral
+- What factors may affect the probability of using dialect Gen.Pl forms in numeral
 constructions?
     - Overall frequency of dialect Gen.Pl in different contexts
     - Noun stem
-    - Numeral-Noun collocationality level
+    - Numeral-Noun collocationality
     - Numeral form (Nom/Gen)
     - Year of birth
     - Education level
     - Gender
-- Does dialect “overuse” [@kasatkin05] of the -*ov* ending affect cases like *kilogram* vs
-*kilogram-ov*?
+- Does dialect “overuse” [@kasatkin05] of the -*ov* ending affect cases like *kilogramm* vs
+*kilogramm-ov*?
 
 ## Does dialect “overuse” of the -*ov* ending affect measure words?
 
@@ -643,15 +643,12 @@ knitr::include_graphics("images/dial_num_constr_collocationality_num_type.png")
 
 ## Conclusions
 
-- Dialect “overuse” of the -*ov* ending doesn’t affect mesuare words: zero inflexion forms (*kilogram*) are found in more than 90% of contexts
-- Early year of birth & low education level make the probability of using dialect
-Gen.Pl form higher
-- ‘The most frequent pairs survive’ (Chiara): the probability of dialect form
-higher for nouns which often cooccur with numerals
+- Dialect “overuse” of the -*ov* ending does not affect measure words: zero inflection forms (*kilogramm*) are found in more than 90% of contexts
+- Year of birth and education level affect the probability of using dialect Gen.Pl forms (older people and people with a low education level use dialect forms more frequently)
+- ‘The most frequent pairs survive’ (Chiara): the probability of using dialect forms is higher for nouns which often co-occur with numerals
 - The type of noun stem seems to be significant
 - Potential contact influence in the case of Spiridonova Buda? (Belorussian)
-- The correlation between the frequency of dialect Gen.Pl forms in numeral
-constructions and other types of contexts is questionable
+- The correlation between the frequency of dialect Gen.Pl forms in numeral constructions and other types of contexts is questionable
 
 # Neg Exist constructions
 
