@@ -96,8 +96,8 @@ knitr::include_graphics("images/dobrushina.jpg")
 knitr::include_graphics("images/daniel.png")
 ```
 
-- Multiple sociolinguistic expeditions to Daghestan
-- Several dialect expeditions to Ustya \pause
+- Multiple sociolinguistic fieldtrips to Daghestan
+- Several dialect fieldtrips to Ustya \pause
 - Online corpora available for each of them:
     - [Corpus of Russian spoken in Daghestan](https://parasolcorpus.org/dagrus/)
     - [Ustja River Basin Corpus](https://www.parasolcorpus.org/Pushkino/login.php) \pause
@@ -195,7 +195,7 @@ knitr::include_graphics("images/map.png")
 
 \alert{What are the factors that influence variation?} \pause
 
-\alert{Can we find different variation patterns?}
+\alert{Can we find variation patterns?}
 \vfill
 
 ## Previous publications
