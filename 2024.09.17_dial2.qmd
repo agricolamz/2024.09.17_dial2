@@ -602,7 +602,7 @@ Example of 'other' contexts: *ne bylo cerkv\alert{ov}* (stand *cerkv\alert{ej}*)
 ## Pearson correlation coefficient: 0.699
 
 ```{r}
-#| out-width: 110%
+#| out-width: 105%
 
 knitr::include_graphics("images/dial_num_constr_correlation.png")
 ```
@@ -626,7 +626,7 @@ knitr::include_graphics("images/dial_num_constr_years_of_education.png")
 ## Is collocationality significant?
 
 ```{r}
-#| out-width: 110%
+#| out-width: 105%
 
 knitr::include_graphics("images/dial_num_constr_collocationality.png")
 ```
