@@ -207,6 +207,7 @@ knitr::include_graphics("images/map.png")
 - Russian of Moksha speakers [@kashkin20]
 - Russian of Hill Mari [@kashkin22]
 - Russian of Nganasan speakers [@khomchenkova20]
+\pause
 - Dialect of Ustya River Basin [@daniel19]
 
 # DiaL2
