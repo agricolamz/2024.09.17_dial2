@@ -521,7 +521,7 @@ knitr::include_graphics("images/moroz.jpeg")
 
 - widespread feature
 - was studied in standard Russian & bilingual varieties
-- in standard Russian some special numerative forms tend to appear in numeral constructions (Kholodilova, forthcoming)
+- in standard Russian some special numerative forms tend to appear in numeral constructions [@kholodilova24]
 - dialect speech may show different tendencies as compared to other spoken varieties of Russian
 
 ## Examples
@@ -548,8 +548,6 @@ constructions?
 *kilogramm-ov*?
 
 ## Does dialect “overuse” of the -*ov* ending affect measure words?
-
-\pause
 
 No
 
@@ -586,26 +584,6 @@ knitr::include_graphics("images/dial_num_constr_map.png")
 ```
 
 No geographical pattern observed (but, see Spiridonova Buda).
-
-## Is overall frequency of dialect Gen.Pl significant?
-
-- corpus: Dvina
-- *godov*: 25
-- *let*: 8
-- % *godov*: 75
-- -*ov* in other than numeral contexts: 9
-- corpus size: 68,010
-- ipm -*ov*: 132
-
-Example of 'other' contexts: *ne bylo cerkv\alert{ov}* (stand *cerkv\alert{ej}*) ‘there were no churches’
-
-## Pearson correlation coefficient: 0.699
-
-```{r}
-#| out-width: 105%
-
-knitr::include_graphics("images/dial_num_constr_correlation.png")
-```
 
 ## Is year of birth significant?
 
